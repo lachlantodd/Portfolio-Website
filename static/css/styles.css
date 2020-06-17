@@ -26,6 +26,10 @@ body, nav {
     color: white;
 }
 
+.container {
+    background-color: #383838;
+}
+
 .left-container {
     text-align: left;
 }
