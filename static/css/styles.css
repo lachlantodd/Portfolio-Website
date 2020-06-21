@@ -37,3 +37,22 @@ body, nav {
 .right-container {
     text-align: right;
 }
+
+.card {
+    background-color: #3f3f3f;
+}
+
+.btn-dark {
+    background-color: #474747;
+    border-color: #474747;
+}
+
+.btn-dark:hover {
+    background-color: #555555;
+    border-color: #555555;
+}
+
+.btn-dark:active, .btn-dark:focus {
+    background-color: #343434!important;
+    border-color: #343434!important;
+}
