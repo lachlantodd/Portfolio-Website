@@ -56,3 +56,15 @@ body, nav {
     background-color: #343434!important;
     border-color: #343434!important;
 }
+
+table, th, td {
+    border: 1px solid#242424;
+  }
+
+td, th {
+    padding: 5px;
+}
+
+th {
+    font-size: large;
+}
