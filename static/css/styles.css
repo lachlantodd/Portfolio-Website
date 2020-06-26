@@ -68,3 +68,16 @@ td, th {
 th {
     font-size: large;
 }
+
+.dropdown-menu.collapsing {
+    display:block;
+}
+
+a.text-link {
+    color: white;
+    text-decoration: underline;
+}
+
+a.text-link:hover {
+    color: #afafaf;
+}
