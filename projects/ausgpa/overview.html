@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="../../static/css/styles.css">
 
-  <title>Bachelor of Engineering - Lachlan Todd Portfolio</title>
+  <title>Australian GPA Calculator - Lachlan Todd Portfolio</title>
 </head>
 
 <body>
@@ -21,22 +21,22 @@
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
-          <li class="nav-item dropdown active">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Education
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="/education/master-it/overview">Master of Information Technology (Software Development)</a>
-              <a class="dropdown-item active-item" href="/education/bachelor-eng/overview">Bachelor of Engineering (Honours) (Mechanical) <span class="sr-only">(current)</span></a>
+              <a class="dropdown-item" href="/education/bachelor-eng/overview">Bachelor of Engineering (Honours) (Mechanical)</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="/projects/the-plane-game/overview">The Plane Game</a>
-              <a class="dropdown-item" href="/projects/ausgpa/overview">Australian GPA Calculator</a>
+              <a class="dropdown-item active-item" href="/projects/ausgpa/overview">Australian GPA Calculator <span class="sr-only">(current)</span></a>
               <a class="dropdown-item" href="/projects/pen-ultimate/overview">Pen Ultimate</a>
               <a class="dropdown-item" href="/projects/stock-blast/overview">Stock Blast</a>
               <a class="dropdown-item" href="/projects/inventory-management-system/overview">Inventory Management System</a>
@@ -52,19 +52,41 @@
       </div>
     </nav>
   </header>
-  <div class="container rounded my-4">
+  <div class="container rounded mt-3">
     <div class="row pt-3">
       <div class="col mb-4">
-        <h1>Bachelor of Engineering (Honours)</h1>
-        <h5>Mechanical Major</h5>
-        <h6>James Cook University, Townsville</h6>
+        <h1>Australian GPA Calculator</h1>
+        <h6>Calculate your current or required GPA of the semster's assessment.</h6>
       </div>
     </div>
     <div class="row">
       <div class="col mb-4">
         <p>
-          Section currently under construction.
+          Australian GPA Calculator was created for submission as my final project for Harvard's online CS50x course.
+          The requirement was to create something that changed the world, benefitted your community or meant something to you.
+          I identified that each semester I would perform a series of GPA calculations on a piece of paper to determine possible outcomes and requirements.
+          Ultimately this wasted time as the set of calculations would have to be remembered and repeated each semester.
+          This project aimed to simplify and automate the calculations for myself and all Australian students using the 7-point GPA scale.
         </p>
+        <p>
+          The website was created as barebones as possible to prioritise performance.
+          For example, it is purely front-end, with no server.
+          A server was not possible without paying for a webserver and GitHub Pages only hosts html pages for free.
+          This did not end up being a limitation to the project as the concept only required calculations to be performed in the browser.
+        </p>
+        <p>
+          One of my goals was for the website to be interactive with a smooth user experience.
+          I utilised Bootstrap to give a consistent feel across the page and created a neutral but pleasing seamless tile for the background.
+          The final product incorporates Javascript animations to expand and hide fields as required by the input given by the user.
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-9 col-12">
+            <video class="img-fluid rounded-top" playsinline muted loop autoplay>
+              <source src="../../static/img/ausgpa/preview.mp4" type="video/mp4">
+            </video>
+            <br><br><a class="btn btn-dark btn-block" href="https://ausgpa.com" target="_blank">View Website</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
