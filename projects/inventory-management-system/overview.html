@@ -63,8 +63,35 @@
     <div class="row">
       <div class="col mb-4">
         <p>
-          Section under construction.
+          This console application was created as the final submission to QUT's unit IFN564 Data Structures and Algorithms.
+          The requirement was to create a console application using C# to digitally store and manage an inventory of tools using an appropriate data structure.
+          I chose to store the tools in a tree data structure such that each tool was a child of its tool category, and each tool category was a child of the root node.
+          Tools were stored with references to their first child and their next sibling, which were null if empty.
         </p>
+        <p>
+          A tree structure was chosen since it is dynamically sized.
+          The assignment specification required functionality to add new tools so I decided this would be important.
+          There is an obvious slight searching speed limitation since the tools are not stored adjacent in memory like in an array.
+          I decided, however, that since the total number of tools would not be significantly large, the difference in search speed would be negligible.
+        </p>
+        <p>
+          For adding new tools to the tree, a breadth-first approach to searching was used until the correct tool category was found.
+          The category was then traversed until the new tool could be placed alphabetically.
+          This ensured the tree was always alphabetically sorted without having to call any sorting methods.
+        </p>
+        <p>
+          An array was used to store the data of the tool renters (an array of Renter objects).
+          The array was chosen here for its speed and simplicity, allowing for searching by index to go back and forward through the array.
+          The number of active renters is expected to grow and shrink rather simultaneously, as opposed to the number of tools only ever increasing over time.
+          Because of this, I decided an array would structure with a large enough static limit would be appropriate.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10 mb-4">
+        <video class="img-fluid rounded-top" playsinline muted loop autoplay>
+          <source src="../../static/img/inventory-management-system/preview.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </div>
