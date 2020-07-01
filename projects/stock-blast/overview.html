@@ -63,7 +63,25 @@
     <div class="row">
       <div class="col mb-4">
         <p>
-          Section under construction.
+          This website was created as the final submission to QUT's unit IFN666 Web and Mobile Application Development.
+          The requirement was to create a website using the React library which displays stock market data available from a QUT server.
+          Modules such as ag-Grid and Chart.js were used to represent the data, as required by the high distinction marking criteria.
+        </p>
+        <p>
+          The website only hits QUT's servers twice overall. 
+          Once to initially retrieve the stock listings data, and again to retrieve the user-chosen stock's trading history.
+          All other data processing occurs locally, using React's useEffect and useState hooks to update components as required.
+          The use of these hooks ensured a lightweight solution as the DOM was only updated if components were actually changed.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <video class="img-fluid rounded-top" playsinline muted loop autoplay>
+          <source src="../../static/img/stock-blast/preview.mp4" type="video/mp4">
+        </video>
+        <p>
+          Since this website accesses a QUT server for its stock data, which requires an authenticated VPN connection, it is not currently accessible on the internet.
         </p>
       </div>
     </div>
