@@ -53,8 +53,8 @@ body, nav {
 }
 
 .btn-dark:active, .btn-dark:focus {
-    background-color: #343434!important;
-    border-color: #343434!important;
+    background-color: #2f2f2f!important;
+    border-color: #2f2f2f!important;
 }
 
 table, th, td {
