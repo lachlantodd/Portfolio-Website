@@ -99,3 +99,13 @@ a.text-link:hover {
     max-height: 300px;
     opacity: 1;
 }
+
+.badge-highlight img {
+    opacity: 0.85;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+.badge-highlight img:hover {
+    opacity: 1;
+}
