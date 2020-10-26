@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/static/css/styles.css">
   <link rel="icon" href="/static/img/lt.ico">
 
-  <title>Australian GPA Calculator - Lachlan Todd Portfolio</title>
+  <title>Comparathon - Lachlan Todd Portfolio</title>
 </head>
 
 <body>
@@ -37,8 +37,8 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="/projects/the-plane-game/overview">The Plane Game</a>
-              <a class="dropdown-item active-item" href="/projects/ausgpa/overview">Australian GPA Calculator <span class="sr-only">(current)</span></a>
-              <a class="dropdown-item" href="/projects/comparathon/overview">Comparathon</a>
+              <a class="dropdown-item" href="/projects/ausgpa/overview">Australian GPA Calculator</a>
+              <a class="dropdown-item active-item" href="/projects/comparathon/overview">Comparathon <span class="sr-only">(current)</span></a>
               <a class="dropdown-item" href="/projects/pen-ultimate/overview">Pen Ultimate</a>
               <a class="dropdown-item" href="/projects/stock-blast/overview">Stock Blast</a>
               <a class="dropdown-item" href="/projects/inventory-management-system/overview">Inventory Management System</a>
@@ -57,46 +57,39 @@
   <div class="container rounded my-4">
     <div class="row pt-3">
       <div class="col mb-4">
-        <h1>Australian GPA Calculator</h1>
-        <h6>Calculate your current or required GPA of the semster's assessment.</h6>
+        <h1>Comparathon</h1>
+        <h6>Compare two Twitter users head to head.</h6>
       </div>
     </div>
     <div class="row">
       <div class="col mb-4">
         <p>
-          Australian GPA Calculator was created for submission as my final project for Harvard's online CS50x course.
-          The requirement was to create something that changed the world, benefitted your community or meant something to you.
-          I identified that each semester I would perform a series of GPA calculations on a piece of paper to determine possible outcomes and requirements.
-          Ultimately this wasted time as the set of calculations would have to be remembered and repeated each semester.
-          This project aimed to simplify and automate the calculations for myself and all Australian students using the 7-point GPA scale.
+          This Node.js application was created as the final submission to QUT's unit CAB432 Cloud Computing.
+          The requirement was to create a stateless cloud application which utilised cloud scaling and persistence.
+          Since this was a group assignment, I developed it with another student, Tom Hunter.
         </p>
         <p>
-          The website was created as barebones as possible to prioritise performance.
-          For example, it is purely front-end, with no server.
-          A server was not possible without paying for a webserver and GitHub Pages only hosts html pages for free.
-          This did not end up being a limitation to the project as the concept only required calculations to be performed in the browser.
+          The web app allows you to enter two Twitter usernames to compare head to head.
+          The 100 most recent (Twitter API limitation) tweets are then grabbed and analysed for sentiment using natural language processing.
+          The QuickChart API is then used to create a stacked graph comparing the two users for positive, negative and neutral tweet sentiment.
+          Finally the chart, as well as the compiled list of all tweets returned from Twitter, AWS S3 and Redis cache.
         </p>
         <p>
-          One of my goals was for the website to be interactive with a smooth user experience.
-          I utilised Bootstrap to give a consistent feel across the page and created a neutral but visually appealing seamless tile for the background.
-          The final product incorporates Javascript animations to expand and hide fields as required by the input given by the user.
+          To bypass the Twitter API 100 tweet and seven day history limitations, an AWS S3 bucket and Elasticache Redis cache is used for persistence.
+          The application was also imaged and its scaling out and back in ability was tested on AWS.
         </p>
-        <div class="row justify-content-center">
-          <div class="col-lg-10 col-12">
-            <video class="img-fluid rounded-top" playsinline muted loop autoplay>
-              <source src="/static/img/ausgpa/preview.mp4" type="video/mp4">
-            </video>
-            <br><br>
-            <div class="row">
-              <div class="col-6">
-                <a class="btn btn-dark btn-block shadow-sm" href="https://ausgpa.com" target="_blank">View Website</a>
-              </div>
-              <div class="col-6">
-                <a class="btn btn-dark btn-block shadow-sm" href="https://github.com/lachlantodd/AusGPA" target="_blank">View Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-9 col-12 mb-3">
+        <img class="rounded" src="/static/img/comparathon/website1.png" width="100%">
+      </div>
+      <div class="col-lg-10 col-12 mb-4">
+        <video class="img-fluid rounded-top" playsinline muted loop autoplay>
+          <source src="/static/img/comparathon/preview2.mp4" type="video/mp4">
+        </video>
+        <a class="btn btn-dark btn-block shadow-sm" href="https://github.com/lachlantodd/CAB432Assign2" target="_blank">View Source Code</a>
+        <p>Since this website uses Node.js on the back-end, it is not currently accessible on the internet.</p>
       </div>
     </div>
   </div>
